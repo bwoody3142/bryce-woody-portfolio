@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 8%);
+    color: hsl(166, 100%, 70%);
+    padding-inline: 3rem;
+    height: 10vh;
+    box-shadow: hsla(0, 0%, 0%, 100%) 0 0 12px;
+    
+    & > .brand {
+        font-size: 2em;
+        font-weight: 500;
+        justify-self: flex-start;
+    }
+    
+    & > .links {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+
+        & > .link {
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 500;
+            transition: transform 150ms;
+            
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-3px);
+            }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                background-color: var(--green);
+            }
+    
+            &:hover:after {
+                width: 100%;
+            }
+    
+        }
+
+        & > .resumeLink {
+            font-size: 1.25rem;
+            font-weight: 500;
+            padding: 0.25em 1em;
+            border-radius: 0.25em;
+            background-color: hsla(166, 100%, 70%, 20%);
+            transition: box-shadow 150ms, background-color 100ms, color 100ms, transform 150ms;
+            
+            &:hover {
+                cursor: pointer;
+                box-shadow: var(--green) 0 0px 8px;
+                background-color: var(--green);
+                color: var(--dark-blue);
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
