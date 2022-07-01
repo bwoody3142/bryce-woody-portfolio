@@ -6,8 +6,11 @@
   --dark-blue: hsl(217, 63%, 12%);
   --green: hsl(166, 100%, 70%);
   --green-faded: hsl(166, 60%, 56%);
+  --light-text: hsl(0, 0%, 82%);
 
   --header-height: 10vh;
+
+  --icon-width: 1.35em;
 }
 
 html,
@@ -37,6 +40,32 @@ a {
   background-color: hsl(0, 0%, 25%);
   border-radius: 10px;
 }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: calc(6vw + var(--icon-width));
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  outline: red;
+}
+
+.gap-1 { gap: 1vh; }
+.gap-2 { gap: 2vh; }
+.gap-3 { gap: 3vh; }
+.gap-4 { gap: 4vh; }
+.gap-5 { gap: 5vh; }
+.gap-6 { gap: 6vh; }
+.gap-7 { gap: 7vh; }
+.gap-8 { gap: 8vh; }
+.gap-9 { gap: 9vh; }
+.gap-10 { gap: 10vh; }
 
 .has-tooltip {
   position: relative;

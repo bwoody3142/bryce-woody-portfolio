@@ -1,6 +1,6 @@
 .links {
     position: fixed;
-    right: 4%;
+    right: 4vw;
     top: 50%;
     transform: translateY(calc(-50% + 5vh));
     height: 30vh;
@@ -10,8 +10,8 @@
     color: var(--green);
 
     & svg {
-        height: 1.35em;
-        width: 1.35em;
+        height: var(--icon-width);
+        width: var(--icon-width);
     }
     
     &:before, &:after {

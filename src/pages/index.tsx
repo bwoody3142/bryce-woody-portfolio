@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Header from '../components/Header';
+import Intro from '../components/intro/Intro';
 import SideLinks from '../components/SideLinks';
 import { trpc } from '../utils/trpc';
 
@@ -14,7 +15,9 @@ const Home: NextPage = () => {
     <div className="bg-red-500">
       <Header />
       <SideLinks />
-      <div className="test"></div>
+      <div className="content">
+        <Intro />
+      </div>
     </div>
   )
 }

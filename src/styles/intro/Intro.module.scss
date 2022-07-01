@@ -1,0 +1,18 @@
+.name {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--green-faded);
+}
+
+.jobTitle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--green-faded);
+}
+
+.summary {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--light-text);
+    max-width: 50ch;
+}
