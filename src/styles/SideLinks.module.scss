@@ -1,0 +1,35 @@
+.links {
+    position: fixed;
+    right: 4%;
+    top: 50%;
+    transform: translateY(calc(-50% + 5vh));
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--green);
+
+    & svg {
+        height: 1.35em;
+        width: 1.35em;
+    }
+    
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        right: 50%;
+        height: 23vh;
+        width: 1px;
+        background-color: hsl(0, 0%, 35%);
+    }
+    
+    &:before {
+        top: -2.5vh;
+        transform: translateY(-100%);
+    }
+    
+    &:after {
+        bottom: -2.5vh;
+        transform: translateY(100%);
+    }
+}

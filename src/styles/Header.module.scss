@@ -1,11 +1,14 @@
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: hsla(0, 0%, 100%, 8%);
     color: hsl(166, 100%, 70%);
     padding-inline: 3rem;
-    height: 10vh;
+    height: var(--header-height);
     box-shadow: hsla(0, 0%, 0%, 100%) 0 0 12px;
     
     & > .brand {
