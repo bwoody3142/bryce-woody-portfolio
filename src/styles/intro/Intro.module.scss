@@ -1,4 +1,10 @@
+.section {
+    align-items: flex-start;
+    gap: 1vh;
+}
+
 .name {
+    text-align: start;
     font-size: 4rem;
     font-weight: 500;
     color: var(--green-faded);
@@ -7,7 +13,8 @@
 .jobTitle {
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(--green-faded);
+    color: var(--green);
+    // color: var(--light-text);
 }
 
 .summary {

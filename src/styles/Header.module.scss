@@ -10,9 +10,10 @@
     height: var(--header-height);
     box-shadow: hsla(0, 0%, 0%, 100%) 0 0 12px;
 
-    & * { color: var(--green); }
+    // & * { color: var(--green); }
     
     & > .brand {
+        color: var(--green);
         font-size: 2em;
         font-weight: 500;
         justify-self: flex-start;
@@ -31,6 +32,7 @@
             
             &:hover {
                 cursor: pointer;
+                color: var(--green);
                 transform: translateY(-3px);
             }
             
