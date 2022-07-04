@@ -31,6 +31,54 @@ a {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: initial;
+}
+
+p, 
+span,
+div {
+  color: var(--light-text);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+
+.cool-btn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.25em 1em;
+  color: var(--green);
+  background-color: hsla(166, 100%, 70%, 20%);
+  border-radius: 0.25em;
+  transition: box-shadow 150ms, background-color 100ms, color 100ms, transform 150ms;
+  
+  &:hover {
+      cursor: pointer;
+      box-shadow: var(--green) 0 0px 8px;
+      background-color: var(--green);
+      color: var(--dark-blue);
+      transform: translateY(-3px);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   background-color: transparent;
@@ -43,6 +91,7 @@ a {
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-right: calc(6vw + var(--icon-width));
@@ -52,8 +101,17 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  align-items: center;
+  min-height: 90vh;
   outline: red;
+}
+
+.section-title { 
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--green);
+  text-align: center;
+  width: 100%;
 }
 
 .gap-1 { gap: 1vh; }
@@ -66,6 +124,24 @@ section {
 .gap-8 { gap: 8vh; }
 .gap-9 { gap: 9vh; }
 .gap-10 { gap: 10vh; }
+
+.green-text { color: var(--green);}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1em; 
+}
+
+.tech-tag { 
+  font-size: 1rem;
+  font-weight: 400;
+  width: fit-content;
+  padding: 0.2em 0.75em;
+  color: var(--green);
+  background-color: hsla(166, 100%, 70%, 15%);
+  border-radius: 0.25em;
+}
 
 .has-tooltip {
   position: relative;
@@ -120,8 +196,3 @@ section {
 //   bottom: calc(100% + 0.5em);
 //   transform-origin: bottom;
 // }
-
-.test {
-  height: 200vh;
-
-}

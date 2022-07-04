@@ -1,0 +1,18 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+
+    & > .summaryText {
+        font-size: 4vmin;
+        font-weight: 500;
+    }
+}
+
+.bullets {
+    font-size: 2.7vmin;
+
+    & > div {
+        margin-block: 1.25vh;
+    }
+}

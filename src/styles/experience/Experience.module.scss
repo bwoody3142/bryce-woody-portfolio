@@ -1,0 +1,47 @@
+.section {
+    padding-left: 10vw;
+    gap: 2vh;
+}
+
+.jobTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--green);
+    
+    & > span {
+        color: var(--green);
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+
+.jobInfo {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 46%);
+}
+
+.projectTabs {
+    display: flex;
+    background-color: hsl(217, 33%, 20%);
+    border-radius: 0.25em;
+    overflow: hidden;
+    
+    & .tab {
+        color: var(--green);
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0.3em 1.5em;
+        border-radius: 0.2em;
+        
+        &.active {
+            background-color: hsla(166, 100%, 70%, 15%);
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: hsla(166, 70%, 52%, 0.8);
+        }
+    }
+}

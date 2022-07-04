@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
+import WorkExperience from '../components/experience/WorkExperience';
 import Header from '../components/Header';
 import Intro from '../components/intro/Intro';
+import Fca from '../components/projects/fca/Fca';
 import SideLinks from '../components/SideLinks';
 import { trpc } from '../utils/trpc';
 
@@ -17,6 +19,8 @@ const Home: NextPage = () => {
       <SideLinks />
       <div className="content">
         <Intro />
+        <Fca />
+        <WorkExperience />
       </div>
     </div>
   )

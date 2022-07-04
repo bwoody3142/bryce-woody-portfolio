@@ -9,7 +9,7 @@ const Header = () => {
             <div className={styles.link}>Projects</div>
             <div className={styles.link}>Experience</div>
             <div className={styles.link}>Contact</div>
-            <div className={styles.resumeLink}>Resume</div>
+            <div className="cool-btn">Resume</div>
         </div>
     </nav>
   )
