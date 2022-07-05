@@ -41,6 +41,10 @@ div {
   color: var(--light-text);
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .hidden {
   display: none !important;
 }
@@ -114,16 +118,16 @@ section {
   width: 100%;
 }
 
-.gap-1 { gap: 1vh; }
-.gap-2 { gap: 2vh; }
-.gap-3 { gap: 3vh; }
-.gap-4 { gap: 4vh; }
-.gap-5 { gap: 5vh; }
-.gap-6 { gap: 6vh; }
-.gap-7 { gap: 7vh; }
-.gap-8 { gap: 8vh; }
-.gap-9 { gap: 9vh; }
-.gap-10 { gap: 10vh; }
+.gap-1 { gap: 1vmin; }
+.gap-2 { gap: 2vmin; }
+.gap-3 { gap: 3vmin; }
+.gap-4 { gap: 4vmin; }
+.gap-5 { gap: 5vmin; }
+.gap-6 { gap: 6vmin; }
+.gap-7 { gap: 7vmin; }
+.gap-8 { gap: 8vmin; }
+.gap-9 { gap: 9vmin; }
+.gap-10 { gap: 10vmin; }
 
 .green-text { color: var(--green);}
 
@@ -196,3 +200,39 @@ section {
 //   bottom: calc(100% + 0.5em);
 //   transform-origin: bottom;
 // }
+
+
+.MuiFormControl-root {
+
+  &.Mui-focused {
+
+  }
+
+  & > label {
+    color: white;
+  }
+
+  & > label.Mui-focused {
+    color: white;
+  }
+
+  & > .MuiOutlinedInput-root {
+
+    background-color: #233045;
+    color: white;
+
+    & > fieldset {
+      border-color: var(--green) !important;
+    }
+
+    & > textarea {
+      height: unset;
+    }
+
+    &:hover {
+      & > fieldset { 
+        border-color: var(--green) !important;
+      }
+    }
+  }
+}
