@@ -75,7 +75,7 @@ const WorkExperience = () => {
             <div className={cx(styles.tab, activeIdx === 1 ? styles.active : '')} onClick={() => setActiveIdx(1)}>AAA</div>
             <div className={cx(styles.tab, activeIdx === 2 ? styles.active : '')} onClick={() => setActiveIdx(2)}>Texty</div>
         </div>
-        {jobs.map((job, idx) => <Job data={job} show={idx === activeIdx} />)}
+        {jobs.map((job, idx) => <Job key={idx} data={job} show={idx === activeIdx} />)}
     </section>
   )
 };

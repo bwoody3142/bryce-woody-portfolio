@@ -22,7 +22,7 @@ const Fca = () => {
                     </li>
                 </ul>
                 <div className="tech-tags">
-                    {technologies.map(tech => <span className="tech-tag">{tech}</span>)}
+                    {technologies.map(tech => <span className="tech-tag" key={tech}>{tech}</span>)}
                 </div>
             </div>
             <div className={styles.video}></div>

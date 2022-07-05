@@ -14,15 +14,15 @@ const Job = ({ data, show }: Props) => {
             <span className={styles.summaryText}>{data.summary.text}</span>
             <div className="tech-tags">
                 {data.summary.tags.map(tag => (
-                    <span className="tech-tag">{tag}</span>
+                    <span className="tech-tag" key={tag}>{tag}</span>
                 ))}
             </div>
         </div>
         <ul className={styles.bullets}>
             {data.bullets.map(bullet => (
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2" key={bullet.text}>
                     <li>{bullet.text}</li>
-                    {bullet.tags.map(tag => <div className="tech-tag">{tag}</div>)}
+                    {bullet.tags.map(tag => <div className="tech-tag" key={tag}>{tag}</div>)}
                 </div>
             ))}
         </ul>

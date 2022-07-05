@@ -9,13 +9,13 @@ import { trpc } from '../utils/trpc';
 
 const Home: NextPage = () => {
 
-  // const { error, isLoading, data } = trpc.useQuery(['hello']);
+  // const { error, isLoading, data } = trpc.useQuery(['sendEmail']);
 
   // if (isLoading) return <div>Loading...</div>
   // if (error) return <div>{error.message}</div>
   
   return (
-    <div className="bg-red-500">
+    <>
       <Header />
       <SideLinks />
       <div className="content">
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <WorkExperience />
         <Contact />
       </div>
-    </div>
+    </>
   )
 }
 

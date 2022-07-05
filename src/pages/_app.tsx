@@ -6,11 +6,14 @@ import { httpBatchLink } from '@trpc/client/links/httpBatchLink'
 import superjson from 'superjson'
 import { AppRouter } from '../server/route/app.router'
 import { trpc } from '../utils/trpc'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main>
       <Component {...pageProps} />
+      <ToastContainer position="bottom-right" />
     </main>
   )
 }

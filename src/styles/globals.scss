@@ -81,6 +81,13 @@ div {
       color: var(--dark-blue);
       transform: translateY(-3px);
   }
+
+  // Send Message 
+  &.send-message-btn {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-inline: 3em;
+  }
 }
 
 ::-webkit-scrollbar {
