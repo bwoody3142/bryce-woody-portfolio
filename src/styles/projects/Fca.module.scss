@@ -5,18 +5,16 @@
 
 .content {
     width: 100%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    place-items: center;
-    
-    @media(max-width: 850px){ 
-        grid-template-columns: 50% 50%;
-    }
-    
-    @media(max-width: 768px){ 
-        grid-template-columns: initial;
-    }
 
+    @media(min-width: 769px){ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: start;
+    }
+    
+    @media(min-width: 1000px){ 
+        grid-template-columns: 40% 60%;
+    }
 }
 
 .video {

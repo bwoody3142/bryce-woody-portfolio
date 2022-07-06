@@ -1,23 +1,27 @@
 .section {
-    padding-left: 10vw;
     gap: 2vh;
+    margin-inline: 10vw 3vw;
+    
+    @media(min-width: 769px){ 
+        margin-inline: 5vw;
+    }
 }
 
 .jobTitle {
-    font-size: 2rem;
+    font-size: min(3.7vw, 2.5rem);
     font-weight: 500;
     color: var(--light-text);
     
     & > span {
         color: var(--light-text);
-        font-size: 1.5rem;
+        font-size: min(2.5vw, 1.75rem);
         font-weight: 400;
         font-style: italic;
     }
 }
 
 .jobInfo {
-    font-size: 1.25rem;
+    font-size: min(2.75vw, 1.25rem);
     font-weight: 400;
     color: hsla(0, 0%, 100%, 46%);
 }
@@ -30,7 +34,7 @@
     
     & .tab {
         color: var(--light-text);
-        font-size: 1.5rem;
+        font-size: min(4vmin, 1.5rem);
         font-weight: 600;
         padding: 0.3em 1.5em;
         border-radius: 0.2em;

@@ -10,7 +10,7 @@
 
   --header-height: 10vh;
 
-  --icon-width: 1.35em;
+  --icon-width: 3.5vmin;
 }
 
 html,
@@ -84,11 +84,16 @@ div {
       transform: translateY(-3px);
   }
 
-  // Send Message 
   &.send-message-btn {
-    font-size: 1.5em;
+    width: 85%;
+    font-size: 3.75vmin;
     font-weight: 600;
     padding-inline: 3em;
+    margin-top: 4vh;
+
+    @media(min-width: 769px){ 
+      width: 50%;
+    }
   }
 }
 
@@ -120,7 +125,7 @@ section {
 }
 
 .section-title { 
-  font-size: 3rem;
+  font-size: 9vmin;
   font-weight: 500;
   color: var(--green);
   text-align: center;
@@ -154,6 +159,7 @@ section {
   color: var(--green);
   background-color: hsla(166, 100%, 70%, 15%);
   border-radius: 0.25em;
+  line-height: 2;
 }
 
 .has-tooltip {
@@ -216,17 +222,19 @@ section {
 .MuiFormControl-root {
 
   & > label {
-    color: white;
+    color: hsl(0, 0%, 100%, 85%);
+    font-size: clamp(0.85rem, 3vmin, 1.1rem);
   }
-
+  
   & > label.Mui-focused {
     color: white;
   }
-
+  
   & > .MuiOutlinedInput-root {
-
+    
     background-color: #233045;
     color: white;
+    font-size: clamp(0.85rem, 3vmin, 1.1rem);
 
     & > fieldset {
       border-color: var(--green) !important;

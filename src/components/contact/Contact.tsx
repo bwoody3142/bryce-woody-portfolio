@@ -30,11 +30,11 @@ const Contact = () => {
     return (
         <section id="contact" className={styles.section}>
             <h2 className="section-title">Contact Me!</h2>
-            <div className="flex gap-10 w-100">
+            <div className={styles.content}>
                 <form className={styles.form}>
-                    <TextField onChange={(e) => setName(e.target.value)} label="Your Name" variant="outlined" fullWidth />
-                    <TextField onChange={(e) => setCompany(e.target.value)} label="Company Name" variant="outlined" fullWidth />
-                    <TextField onChange={(e) => setMessage(e.target.value)} label="Message" multiline variant="outlined" fullWidth InputProps={{ rows: 7 }} />
+                    <TextField onChange={(e) => setName(e.target.value)} placeholder="jhfkjhfgkjh" size="small" label="Your Name" variant="outlined" fullWidth />
+                    <TextField onChange={(e) => setCompany(e.target.value)} placeholder="jhfkjhfgkjh" size="small" label="Company Name" variant="outlined" fullWidth />
+                    <TextField onChange={(e) => setMessage(e.target.value)} placeholder="jhfkjhfgkjh" size="small" label="Message" multiline variant="outlined" fullWidth InputProps={{ rows: 7 }} />
                 </form>
                 <div className={styles.links}>
                     <div className={styles.link}>
