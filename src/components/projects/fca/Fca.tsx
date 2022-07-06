@@ -6,7 +6,7 @@ const technologies: Array<string> = ['React', 'React Redux', 'Node.js', 'Express
 
 const Fca = () => {
   return (
-    <section className={styles.section}>
+    <section id="projects" className={styles.section}>
         <h3 className="section-title">Full Court Analytics</h3>
         <div className={styles.content}>
             <div className={styles.info}>
@@ -25,9 +25,14 @@ const Fca = () => {
                     {technologies.map(tech => <span className="tech-tag" key={tech}>{tech}</span>)}
                 </div>
             </div>
-            <div className={styles.video}></div>
+            <div className={styles.video}>
+                <div style={{ padding: '65% 0 0 0', position: 'relative' }}>
+                    <iframe src="https://player.vimeo.com/video/699807441?h=ff2622846c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Furture"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
         </div>
-        <a href="https://fullcourtanalytics.com" className="cool-btn flex align-center">
+        <a href="https://fullcourtanalytics.com" className="cool-btn flex align-center" style={{ marginTop: '1em' }}>
             See it for yourself! &nbsp;
             <HiArrowNarrowRight  />
         </a>

@@ -1,7 +1,6 @@
 .section {
     padding-left: 5vw;
     width: 100%;
-    gap: 5vh;
 }
 
 .content {
@@ -9,13 +8,22 @@
     display: grid;
     grid-template-columns: 40% 60%;
     place-items: center;
+    
+    @media(max-width: 850px){ 
+        grid-template-columns: 50% 50%;
+    }
+    
+    @media(max-width: 768px){ 
+        grid-template-columns: initial;
+    }
 
 }
 
 .video {
     aspect-ratio: 16 / 9;
     width: 100%;
-    background-color: red;
+    filter: drop-shadow(0 0 15px black);
+    z-index: 0;
 }
 
 .info {
@@ -25,7 +33,7 @@
     padding-right: 2vw;
 
     & ul {
-        font-size: 1.2rem;
+        font-size: 2.5vmin;
         line-height: 1.5;
 
         & > li {

@@ -28,7 +28,7 @@ const Contact = () => {
     }
     
     return (
-        <section className={styles.section}>
+        <section id="contact" className={styles.section}>
             <h2 className="section-title">Contact Me!</h2>
             <div className="flex gap-10 w-100">
                 <form className={styles.form}>
@@ -47,13 +47,13 @@ const Contact = () => {
                     </div>
                     <div className={styles.link}>
                         <AiFillGithub color="var(--green)" />
-                        <a className={styles.socialLink} href="https://github.com/bwoody3142" target="_blank">
+                        <a className={styles.socialLink} href="https://github.com/bwoody3142" target="_blank" rel="noreferrer">
                             My GitHub Profile
                         </a>
                     </div>
                     <div className={styles.link}>
                         <AiFillLinkedin color="var(--green)" />
-                        <a className={styles.socialLink} href="https://www.linkedin.com/in/bryce-woody-2872481b4" target="_blank">
+                        <a className={styles.socialLink} href="https://www.linkedin.com/in/bryce-woody-2872481b4" target="_blank" rel="noreferrer">
                             My LinkedIn Profile
                         </a>
                     </div>

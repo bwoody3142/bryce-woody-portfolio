@@ -64,7 +64,7 @@ const WorkExperience = () => {
     const [activeIdx, setActiveIdx] = useState(0);
 
   return (
-    <section className={styles.section}>
+    <section id="experience" className={styles.section}>
         <h3 className="section-title">Work Experience</h3>
         <div className="flex-col">
             <h3 className={styles.jobTitle}>INdigital Telecom - <span>Full Stack Software Engineer</span></h3>
