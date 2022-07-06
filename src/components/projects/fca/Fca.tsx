@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../../../styles/projects/Fca.module.scss';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import Script from "next/script";
 
 const technologies: Array<string> = ['React', 'React Redux', 'Node.js', 'Express.js', 'Firebase', 'Google Cloud Platform', 'Docker', 'Vimeo'];
 
@@ -27,9 +28,9 @@ const Fca = () => {
             </div>
             <div className={styles.video}>
                 <div style={{ padding: '65% 0 0 0', position: 'relative' }}>
-                    <iframe src="https://player.vimeo.com/video/699807441?h=ff2622846c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Furture"></iframe>
+                    <iframe src="https://player.vimeo.com/video/699807441?h=ff2622846c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Full Court Analytics"></iframe>
                 </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
+                <Script src="https://player.vimeo.com/api/player.js"></Script>
                 </div>
         </div>
         <a href="https://fullcourtanalytics.com" className="cool-btn flex align-center" style={{ marginTop: '1em' }}>
